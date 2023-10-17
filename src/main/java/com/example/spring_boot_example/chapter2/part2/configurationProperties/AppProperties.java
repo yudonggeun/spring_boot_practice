@@ -8,25 +8,13 @@ import org.springframework.boot.context.properties.bind.DefaultValue;
 //@ConstructorBinding // spring boot 3.0 이후 부터 필요 없다.
 @ConfigurationProperties("app.sbip.ct")
 public class AppProperties {
-	
-	/**
-	 * Application Name
-	 */
+
 	private final String name;
-	
-	/**
-	 * Application IP
-	 */
+
 	private final String ip;
 
-	/**
-	 * Application IP
-	 */
 	private final int port;
 	
-	/**
-	 * Application Security configuration
-	 */
 	private final Security security;
 
 	public String getName() {
@@ -64,19 +52,10 @@ public class AppProperties {
 
 	public static class Security {
 		
-		/**
-		 * Enable Security. Possible values true/false
-		 */
 		private boolean enabled;
 		
-		/**
-		 * Token Value
-		 */
 		private final String token;
 		
-		/**
-		 * Available roles
-		 */
 		private final List<String> roles;
 		
 		public Security(boolean enabled, String token, List<String> roles) {
@@ -106,5 +85,4 @@ public class AppProperties {
 					'}';
 		}
 	}
-
 }
