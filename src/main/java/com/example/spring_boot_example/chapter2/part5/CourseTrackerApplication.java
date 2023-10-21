@@ -1,12 +1,13 @@
 package com.example.spring_boot_example.chapter2.part5;
 
-import jakarta.validation.Validation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+
+import javax.validation.Validation;
 
 @SpringBootApplication
 public class CourseTrackerApplication implements CommandLineRunner {

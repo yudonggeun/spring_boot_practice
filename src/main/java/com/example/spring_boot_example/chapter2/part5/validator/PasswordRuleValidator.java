@@ -1,10 +1,10 @@
 package com.example.spring_boot_example.chapter2.part5.validator;
 
 
-import jakarta.validation.ConstraintValidator;
-import jakarta.validation.ConstraintValidatorContext;
 import org.passay.*;
 
+import javax.validation.ConstraintValidator;
+import javax.validation.ConstraintValidatorContext;
 import java.util.ArrayList;
 import java.util.List;
 

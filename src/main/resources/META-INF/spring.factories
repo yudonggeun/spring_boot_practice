@@ -1,0 +1,3 @@
+org.springframework.boot.diagnostics.FailureAnalyzer=\
+  com.example.spring_boot_example.chapter4.exception.UrlNotAccessibleFailureAnalyzer,
+#com.example.spring_boot_example.chapter4.exception.UrlNotAccessibleFailureAnalyzer
