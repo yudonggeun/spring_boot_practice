@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class UrlAccessibilityHandler {
 
-    @Value("${api.url:https://www.navuder.com/}")
+    @Value("${api.url:https://www.naver.com/}")
     private String url;
 
     @EventListener(classes = ContextRefreshedEvent.class)

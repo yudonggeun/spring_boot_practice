@@ -16,6 +16,8 @@ repositories {
 }
 
 dependencies {
+	implementation 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
 	implementation 'org.springframework.boot:spring-boot-starter'
 	// 2.2.1
 	annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
@@ -26,6 +28,18 @@ dependencies {
 	// 3.2
 //	implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
 //	testImplementation 'de.flapdoodle.embed:de.flapdoodle.embed.mongo'
+	// 4.4
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+}
+
+springBoot{
+	buildInfo {
+		additionalProperties = [
+				'version': "${project.version}",
+				'name': "${project.name}"
+		]
+	}
 }
 
 tasks.named('test') {
