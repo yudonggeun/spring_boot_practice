@@ -1,10 +1,13 @@
 package com.example.spring_boot_example.chapter2.part5;
 
 
+import lombok.Builder;
+
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotEmpty;
 
+@Builder
 public class Course {
 
 	private int id;
